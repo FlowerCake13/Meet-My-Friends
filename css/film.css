@@ -1,0 +1,83 @@
+#content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+img{
+	width: 100%;
+	height: 100%;
+}
+
+.row{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.col{
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+	background-color: none;
+	height: calc(100vw / 5);
+	width: calc(100vw / 5);
+}
+
+.container{
+	width: fit-content;
+	margin-bottom: 100px;
+	margin-top: 100px;
+}
+
+.flip_front, .flip_back{
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	position: absolute;
+	/*top: 0;
+	left: 0;*/
+}
+
+.flip_back{
+	transform: rotateY(180deg);
+}
+
+.inside{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #dbe3d1;
+}
+
+.inside:hover, .flip_front img:hover{
+	cursor: pointer;
+	box-shadow: 0px 0px 10px .5px #000;
+	background-clip: content-box;
+}
+
+.inside p {
+	margin: 0px;
+}
+
+.caption {
+	font-size: 3vh;
+	font-family: 'Spectral', serif;
+}
+
+.camera {
+	font-weight: lighter;
+	font-size: 2vh;
+	font-family: 'Karla', sans-serif;
+}

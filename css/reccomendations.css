@@ -1,0 +1,64 @@
+h1 {
+	font-weight: bold;
+	font-family: 'Spectral', serif;
+}
+
+.col h3{
+	font-size: 20px;
+	font-family: 'Kiwi Maru', serif;
+}
+
+.col h4 {
+	font-weight: lighter;
+	font-family: 'Kiwi Maru', serif;
+	font-size: 18px;
+}
+
+#recc-bar{
+	width: 100%;
+	z-index: 100;
+	background-color: #333;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#recc-bar a{
+	float: left;
+	font-size: 17px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+#recc-bar a:hover{
+	background-color: #E9EDC9;
+	color: black;
+}
+
+.category{
+	margin: 5px;
+	margin-left: 20px;
+}
+
+.col {
+	text-align: center;
+}
+
+.col img {
+	width: calc(15vw);
+	height: auto;
+}
+
+.col p {
+	font-weight: lighter;
+	font-family: 'Karla', sans-serif;
+}
+
+.col h2{
+	margin-top: 10px;
+	font-weight: bold;
+	font-family: 'Kiwi Maru', serif;
+}

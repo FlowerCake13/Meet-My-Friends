@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Karla&family=Roboto:wght@400;900&family=Spectral&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../nav-bar.css">
+		<link rel="stylesheet" type="text/css" href="../css/film.css">
+		<title>Film</title>
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<div id="navbar">
+					<a href="../index.html"><i class="fas fa-heart"></i></a>
+					<a href="film.html">Film</a>
+					<a href="reccomendations.html">Reccomendations</a>
+					<a href="about.html">About</a>
+				</div>
+			</header>
+
+			<section id="content">
+				<div class="container">
+					<div class="row row-cols-4 phot">
+						<div class="col item" onclick="flip(event)">
+							<div class="front">
+								<img src="../assets/film/film1.jpg">
+							</div>
+							<div class="back">
+								<div class="inside">
+									<p>Camp in 8th Grade</p>
+									<p>another one</p>
+								</div>
+							</div>
+						</div>
+						<div class="col item" onclick="flip(event)">
+							<div class="front">
+								<img src="../assets/film/film2.jpg">
+							</div>
+							<div class="back">
+								<div class="inside">
+									<p>caption here</p>
+								</div>
+							</div>
+						</div>
+						<div class="col item" onclick="flip(event)">
+							<div class="front">
+								<img src="../assets/film/film3.jpg">
+							</div>
+							<div class="back">
+								<div class="inside">
+									<p>caption here</p>
+								</div>
+							</div>
+						</div>
+						<div class="col item" onclick="flip(event)">
+							<div class="front">
+								<img src="../assets/film/film4.jpg">
+							</div>
+							<div class="back">
+								<div class="inside">
+									<p>caption here</p>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="col item" onclick="flip(event)">
+							<div class="front">
+								<img src="../assets/film/film5.jpg">
+							</div>
+							<div class="back">
+								<div class="inside">
+									<p>caption here</p>
+								</div>
+							</div>
+						</div>
+						<div class="col item" onclick="flip(event)">
+							<div class="front">
+								<img src="../assets/film/film6.jpg">
+							</div>
+							<div class="back">
+								<div class="inside">
+									<p>caption here</p>
+								</div>
+							</div>
+						</div>
+						<div class="col item" onclick="flip(event)">
+							<div class="front">
+								<img src="../assets/film/film7.jpg">
+							</div>
+							<div class="back">
+								<div class="inside">
+									<p>caption here</p>
+								</div>
+							</div>
+						</div>
+						<div class="col item" onclick="flip(event)">
+							<div class="front">
+								<img src="../assets/film/film8.jpg">
+							</div>
+							<div class="back">
+								<div class="inside">
+									<p>caption here</p>
+								</div>
+							</div>
+						</div> -->
+						<!-- <div class="col item" onclick="flip(event)">
+							<div class="front">
+								<img src="../assets/film/film9.jpg">
+							</div>
+							<div class="back">
+								<div class="inside">
+									<p>caption here</p>
+								</div>
+							</div>
+						</div>
+						<div class="col item" onclick="flip(event)">
+							<div class="front">
+								<img src="../assets/film/film10.jpg">
+							</div>
+							<div class="back">
+								<div class="inside">
+									<p>caption here</p>
+								</div>
+							</div>
+						</div>
+						<div class="col item" onclick="flip(event)">
+							<div class="front">
+								<img src="../assets/film/film11.jpg">
+							</div>
+							<div class="back">
+								<div class="inside">
+									<p>caption here</p>
+								</div>
+							</div>
+						</div>
+						<div class="col item" onclick="flip(event)">
+							<div class="front">
+								<img src="../assets/film/film12.jpg">
+							</div>
+							<div class="back">
+								<div class="inside">
+									<p>caption here</p>
+								</div>
+							</div>
+						</div>
+						<div class="col item" onclick="flip(event)">
+							<div class="front">
+								<img src="../assets/film/film13.jpg">
+							</div>
+							<div class="back">
+								<div class="inside">
+									<p>caption here</p>
+								</div>
+							</div>
+						</div>
+						<div class="col item" onclick="flip(event)">
+							<div class="front">
+								<img src="../assets/film/film14.jpg">
+							</div>
+							<div class="back">
+								<div class="inside">
+									<p>caption here</p>
+								</div>
+							</div>
+						</div>
+						<div class="col item" onclick="flip(event)">
+							<div class="front">
+								<img src="../assets/film/film15.jpg">
+							</div>
+							<div class="back">
+								<div class="inside">
+									<p>caption here</p>
+								</div>
+							</div>
+						</div>
+						<div class="col item" onclick="flip(event)">
+							<div class="front">
+								<img src="../assets/film/film16.jpg">
+							</div>
+							<div class="back">
+								<div class="inside">
+									<p>caption here</p>
+								</div>
+							</div>
+						</div> -->
+					</div>
+				</div>
+				
+			</section>
+
+			<footer>
+				<div class="footer-element">
+					<h3 id="title">Meet My Friends</h3>
+				</div>
+				<div id="page-links" class="footer-element">
+					<a href="../index.html">Home</a>
+					<a href="film.html">Film</a>
+					<a href="reccomendations.html">Reccomendations</a>
+					<a href="about.html">About</a>
+				</div>
+				<div class="footer-element">
+					<h3>Connect</h3>
+					<div id="social-icons">
+						<a href="https://www.instagram.com/linds.cake/?hl=en" target="_blank" class="bot-ico"><i class="fa fa-instagram"></i></a>
+						<a href="https://www.snapchat.com/add/lindscakeftw" target="_blank" class="bot-ico"><i class="fa fa-snapchat"></i></a>
+						<a href="https://open.spotify.com/user/lminami96?si=p6XrQWjaS2ChK-1OTC4xqQ" target="_blank" class="bot-ico"><i class="fa fa-spotify"></i></a>
+						<a href="https://github.com/FlowerCake13" target="_blank" class="bot-ico"><i class="fa fa-github-alt"></i></a>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+	<script type="text/javascript" src="../film.js"></script>
+	<script src="https://kit.fontawesome.com/47ab3339d7.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Karla&family=Roboto:wght@400;900&family=Spectral&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../nav-bar.css">
+		<link rel="stylesheet" type="text/css" href="../css/film.css">
+		<title>Film</title>
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<div id="navbar">
+					<a href="../index.html"><i class="fas fa-heart"></i></a>
+					<a href="film.html">Film</a>
+					<a href="reccomendations.html">Reccomendations</a>
+					<a href="about.html">About</a>
+				</div>
+			</header>
+
+			<section id="content">
+				<div class="container">
+					<div class="row row-cols-4">
+						<div class="col" onclick="flip(event)">
+							<div class="front">
+								<img src="../assets/film/film1.jpg">
+							</div>
+							<div class="back">
+								<div class="inside">
+									<p>Camp in 8th Grade</p>
+									<p>another one</p>
+								</div>
+							</div>
+						</div>
+						<div class="col" onclick="flip(event)">
+							<div class="front">
+								<img src="../assets/film/film2.jpg">
+							</div>
+							<div class="back">
+								<div class="inside">
+									<p>test</p>
+								</div>
+							</div>
+						</div>
+						<div class="col" onclick="flip(event)">
+							<div class="front">
+								<img src="../assets/film/film3.jpg">
+							</div>
+							<div class="back">
+								<div class="inside">
+									<p>test</p>
+								</div>
+							</div>
+						</div>
+						<div class="col" onclick="flip(event)">
+							<div class="front">
+								<img src="../assets/film/film4.jpg">
+							</div>
+							<div class="back">
+								<div class="inside">
+									<p>test</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="row row-cols-4">
+						<div class="col item" onclick="flip(event)">
+							<div class="front">
+								<img src="../assets/film/film5.jpg">
+							</div>
+							<div class="back">
+								<div class="inside">
+									<p>test</p>
+								</div>
+							</div>
+						</div>
+						<div class="col item" onclick="flip(event)">
+							<div class="front">
+								<img src="../assets/film/film6.jpg">
+							</div>
+							<div class="back">
+								<div class="inside">
+									<p>test</p>
+								</div>
+							</div>
+						</div>
+						<div class="col item" onclick="flip(event)">
+							<div class="front">
+								<img src="../assets/film/film7.jpg">
+							</div>
+							<div class="back">
+								<div class="inside">
+									<p>test</p>
+								</div>
+							</div>
+						</div>
+						<div class="col item" onclick="flip(event)">
+							<div class="front">
+								<img src="../assets/film/film8.jpg">
+							</div>
+							<div class="back">
+								<div class="inside">
+									<p>test</p>
+								</div>
+							</div>
+						</div>
+					</div> -->
+					<!-- <div class="row">
+						<div class="col">
+							<img src="../assets/film/film9.jpg">
+						</div>
+						<div class="col">
+							<img src="../assets/film/film10.jpg">
+						</div>
+						<div class="col">
+							<img src="../assets/film/film11.jpg">
+						</div>
+						<div class="col">
+							<img src="../assets/film/film12.jpg">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<img src="../assets/film/film13.jpg">
+						</div>
+						<div class="col">
+							<img src="../assets/film/film14.jpg">
+						</div>
+						<div class="col">
+							<img src="../assets/film/film15.jpg">
+						</div>
+						<div class="col">
+							<img src="../assets/film/film16.jpg">
+						</div>
+					</div>
+				</div> -->
+
+			</section>
+
+			<footer>
+				<div class="footer-element">
+					<h3 id="title">Meet My Friends</h3>
+				</div>
+				<div id="page-links" class="footer-element">
+					<a href="../index.html">Home</a>
+					<a href="film.html">Film</a>
+					<a href="reccomendations.html">Reccomendations</a>
+					<a href="about.html">About</a>
+				</div>
+				<div class="footer-element">
+					<h3>Connect</h3>
+					<div id="social-icons">
+						<a href="https://www.instagram.com/linds.cake/?hl=en" target="_blank" class="bot-ico"><i class="fa fa-instagram"></i></a>
+						<a href="https://www.snapchat.com/add/lindscakeftw" target="_blank" class="bot-ico"><i class="fa fa-snapchat"></i></a>
+						<a href="https://open.spotify.com/user/lminami96?si=p6XrQWjaS2ChK-1OTC4xqQ" target="_blank" class="bot-ico"><i class="fa fa-spotify"></i></a>
+						<a href="https://github.com/FlowerCake13" target="_blank" class="bot-ico"><i class="fa fa-github-alt"></i></a>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+	<script type="text/javascript" src="../film.js"></script>
+	<script src="https://kit.fontawesome.com/47ab3339d7.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- CSS 
+				/*.col{
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+	background-color: none;
+	height: 25vw;
+}
+
+.flip_front{
+	padding: 5px;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+}
+*/
+/*.item {
+	padding: 5px;
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+	background-color: none;
+}*/
+
+/*.item:hover{
+	cursor: pointer;
+	box-shadow: 0px 0px 10px .5px #000;
+	background-clip: content-box;
+}*/
+
+/*.flip_front, .flip_back{
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.flip_back{
+	transform: rotateY(180deg);
+}
+
+.inside:hover, .flip_front img:hover{
+	cursor: pointer;
+	box-shadow: 0px 0px 10px .5px #000;
+	background-clip: content-box;
+}*/
+
+/*.flip_front, .flip_back{
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.flip_front{
+	flex: 1 1 50px;
+}
+
+.flip_back{
+	width: inherit;
+	height: 100%;
+	padding: 5px;
+	transform: rotateY(180deg);
+}
+
+.inside{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #dbe3d1;
+}*/ -->
